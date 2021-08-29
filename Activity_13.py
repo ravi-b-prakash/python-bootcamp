@@ -1,3 +1,7 @@
+def inputt():
+    start = int(input("Enter start number: "))
+    stop = int(input("Enter stop number: "))
+    return(start, stop)
 def loop(start, stop):
     for i in range(start, stop):
         if (i%2==0):
@@ -8,7 +12,6 @@ def loop(start, stop):
             else:
                 print(i)
 def main():
-    start = int(input("Enter start number: "))
-    stop = int(input("Enter stop number: "))
+    start, stop = inputt()
     loop(start, stop)
 main()
