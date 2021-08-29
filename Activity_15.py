@@ -1,8 +1,10 @@
 import math
 def inputt():
-    l = int(input("Enter length: "))
-    b = int(input("Enter breadth: "))
-    h = int(input("Enter height: "))
+    dimensions = input("Enter the length, breadth and height: ")
+    list1 = dimensions.split()
+    for i in range (3):
+            list1[i]=int(list1[i])
+    l, b, h = list1
     return(l, b, h)
 def calculate(l, b, h):   
     k = (l**2) + (b**2) + (h**2)
@@ -17,3 +19,4 @@ def main():
     v, r = calculate(l, b, h)
     output(v, r)
 main()
+    
