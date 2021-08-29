@@ -6,7 +6,7 @@ def inputt():
 def greatest(a, b, c):
     if (a>=b) and (a>=c):
         return a
-    elif (b>=c) and (b>=a):
+    elif (b>=c):
         return b
     else:
         return c
@@ -17,5 +17,6 @@ def main():
     big = greatest(a, b, c)
     output(big, a, b, c)
 main()
+    
     
     
