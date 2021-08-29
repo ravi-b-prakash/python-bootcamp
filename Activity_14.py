@@ -3,15 +3,11 @@ def inputt():
     num = int(input("enter a number: "))
     return num
 def prime(num):
-    f=0
+    isprime = True
     for i in range(2, int(math.sqrt(num))+1):
         if(num%i==0):
-            f=1
+            isprime = False
             break
-    if(f==1):
-        isprime = False
-    else:
-        isprime = True
     return(isprime)
 def output(isprime, num):
     if(isprime==True):
