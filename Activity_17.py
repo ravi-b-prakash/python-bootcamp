@@ -1,14 +1,14 @@
-def inputt():
+def getdata():
     string = input()
     return(string)
-def convert(string):
+def compute(string):
     lst = string.split(';')
-    return(lst)
-def output(lst):
-    print([tuple(i.split('=')) for i in lst])
+    lst1 = [tuple(i.split('=')) for i in lst]
+    return(lst1)
+def display(lst1):
+    print(lst1)
 def main():
-    string = inputt()
-    lst = convert(string)
-    output(lst)
+    string = getdata()
+    lst1 = compute(string)
+    display(lst1)
 main()
-
