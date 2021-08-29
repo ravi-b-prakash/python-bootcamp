@@ -2,9 +2,7 @@ def getdata():
     string = input()
     return(string)
 def compute(string):
-    lst = string.split(';')
-    lst1 = [tuple(i.split('=')) for i in lst]
-    return(lst1)
+    return( [tuple(i.split('=')) for i in string.split(';')])
 def display(lst1):
     print(lst1)
 def main():
