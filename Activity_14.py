@@ -9,10 +9,17 @@ def prime(num):
             f=1
             break
     if(f==1):
-        print("%d is composite"%(num))
+        isprime = False
     else:
+        isprime = True
+    return(isprime)
+def output(isprime, num):
+    if(isprime==True):
         print("%d is prime"%(num))
+    else:
+        print("%d is composite"%(num))
 def main():
     num = inputt()
-    prime(num)
+    isprime = prime(num)
+    output(isprime, num)
 main()
